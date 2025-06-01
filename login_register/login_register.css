@@ -3,7 +3,45 @@
 * {
     box-sizing: border-box;
 }
+/* Estilos para o botão "Voltar ao Início" */
+.back-to-home-btn {
+    position: absolute; /* Posição absoluta para flutuar */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    background-color: #007bff; /* Cor de fundo (azul primário) */
+    color: white; /* Cor do texto */
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none; /* Remover sublinhado do link */
+    font-weight: bold;
+    font-size: 0.9em;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
 
+.back-to-home-btn:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+.back-to-home-btn i {
+    font-size: 1.1em; /* Tamanho do ícone */
+}
+
+/* Ajustes para telas menores, se necessário */
+@media (max-width: 600px) {
+    .back-to-home-btn {
+        top: 15px;
+        left: 15px;
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+}
 body {
     background: #EBF8FF; /* Azul muito claro para o fundo */
     display: flex;

@@ -180,6 +180,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Sombra sutil para o botão */
+    text-decoration: none; /* ADIÇÃO: Remove o sublinhado do link */
 }
 
 .access-button:hover {
